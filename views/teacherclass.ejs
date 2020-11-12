@@ -20,8 +20,8 @@
         </div>
         <form method="POST" action="/quiz">
             
-        <section class="container" style="padding:2%!important;">
-            <h5 style="text-align: center;margin-top:-10px"><%=msg%></h5>
+        <section class="container" style="padding:4%!important;">
+            <h5 style="text-align: center;"><%=msg%></h5>
             <%read.forEach(function(row){ %>
             <input type="radio" name="option" value="<%=row.class%>">
             <label for=<%=row.class%>><%=row.class%></label><br>
