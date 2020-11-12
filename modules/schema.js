@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
-// mongoose.connect('mongodb://localhost:27017/default', {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect('mongodb+srv://m001-student:asdfghjkl@sandbox.yaq2o.mongodb.net/default?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/default', {useNewUrlParser: true, useUnifiedTopology: true});
+// mongoose.connect('mongodb+srv://m001-student:asdfghjkl@sandbox.yaq2o.mongodb.net/default?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const quizschema = new mongoose.Schema({
     question:String,

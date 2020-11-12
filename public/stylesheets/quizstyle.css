@@ -96,7 +96,6 @@ h3{
 .container form input,
 .container form textarea,.tea input{
 	width:70%!important;
-	height:40px!important;
 	padding:5px 10px!important;
 	font-size: 15px!important;
 	color:black!important;
@@ -116,14 +115,14 @@ h3{
 
 @media screen and (max-width: 771px){
 .container form input,
-.container form textarea {
+.container form textarea,.tea input {
     width:100% !important;
     padding:5px!important;
     }
 .container form textarea {
     font-size: 15px!important;
 }
-.container form input{
+.container form input,.tea input{
     font-size: 12px!important;
 }
 }

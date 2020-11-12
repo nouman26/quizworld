@@ -69,10 +69,6 @@ app.get("/signup",function(req,res){
 
 // Middleware For class
 var validation=function(req,res,next){
-    if (occu!==""){
-        next()
-    }
-    else{
     message="";
     signmodel=myDBsign.model(req.body.occupation,signschema);
     if(req.body.form=="signin"){
@@ -128,7 +124,6 @@ var validation=function(req,res,next){
         })
     }
 }   
-            }
 app.post("/class",validation,function(req,res){
     
     var classmodel=myDBclass.model(eml,classschema);
@@ -148,7 +143,7 @@ var quizvalidation =function(req,res,next){
     classmodel=myDBclass.model(eml,classschema);
     classsignmodel=myDBsign.model("class",classschema);
 if (occu=="student"){
-    filterstuclass=classsignmodel.find({class:req.body.classname})
+    filterstuclass=classsignmodel.find({class:req.body.classname.toLowerCase()})
     filterstuclass.exec(function(err,data){
         if (err) throw error;
         if (data == ""){
@@ -156,13 +151,13 @@ if (occu=="student"){
             res.redirect(307,"/class");
         }
         else{
-            resultmodel=myDBresult.model(req.body.classname,resultschema);
+            resultmodel=myDBresult.model(req.body.classname.toLowerCase(),resultschema);
             filterresult=resultmodel.find({email:eml})
             filterresult.exec(function(err,data){
             if (err) throw err;
             if (data==""){
                 student_message="";
-                cls=req.body.classname;
+                cls=req.body.classname.toLowerCase();
                 next();
             }
             else{
@@ -184,16 +179,16 @@ else if (occu=="teacher"){
         next();
     }
     else{
-        filtersignclass=classsignmodel.find({class:req.body.writeclass});
+        filtersignclass=classsignmodel.find({class:req.body.writeclass.toLowerCase()});
         filtersignclass.exec(function(err,data){
             if (err) throw error;
             if (data==""){
             var cm=new classmodel({
-                class:req.body.writeclass
+                class:req.body.writeclass.toLowerCase()
                 })
             cm.save(function(){
             var cem=new classsignmodel({
-                class:req.body.writeclass
+                class:req.body.writeclass.toLowerCase()
             })
             cem.save(function(){
                 mess="Your New class has been created successfully";

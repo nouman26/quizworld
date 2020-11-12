@@ -14,11 +14,11 @@
     <header>
             <img src="/Images/quiz world white.png" alt="" class="center">
         <div class="head">
-            <h2 style="font-size: 1.6rem;">Enter a class name that you want to join class for Quiz</h2>
+            <h2 style="font-size: 1.3rem;">Enter a class name that you want to join class for Quiz</h2>
         </div>
         <form method="POST" action="/quiz">
             <div style="margin-top:30px" class="tea head">
-                <h5><%=msg%></h5>
+                <h5 style="background:white;border-radius:10px; margin-bottom:10px; color:red"><%=msg%></h5>
                 <input type="text" name="classname" placeholder="Enter class name">
             </div>
             <button name="send" type="submit" class="submit">Join</button>
