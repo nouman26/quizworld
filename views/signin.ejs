@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Yinka Enoch Adedokun">
+        <title>Quiz World</title>
+        <link rel="stylesheet" href="/stylesheets/signstyle.css">
+        <link rel="stylesheet" href="/stylesheets/footer.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+        
+
+    </head>
+    <body>
+        <!-- Main Content -->
+        <div>
+            <img src="/Images/quiz worlds.png" alt="" class="center">
+            <div class="main-content bg-success text-center">
+                <div class="col-md-4 text-center company__info">
+                    <span class="company__logo">
+                        <img src="/Images/quiz world white.png" alt="Company logo">
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2>Sign In</h2>
+                        </div>
+                        <div class="row">
+                            <form control="" class="form-group" method="POST" action="/class">
+                                <input style="display:none" type="text" name="form" value="signin">
+                                <div class="row">
+                                    <h5 class="invalid-user"><%=msg %></h5>
+                                </div>
+                                <div class="form__radio">
+                                    <input style="margin-left: -10%;" type="radio" name="occupation" value="teacher" required>
+                                    <label for="teacher">Teacher</label>
+                                    <input style="margin-left: 20%;" type="radio" name="occupation" value="student" required>
+                                    <label for="student">Student</label>
+                                </div>
+                                <div class="row">
+                                    <input type="email" name="email" id="email" class="form__input" placeholder="Email" required
+                                </div>
+                                <div class="row">
+                                    <!-- <span class="fa fa-lock"></span> -->
+                                    <input type="password" name="password" id="password" class="form__input" placeholder="Password" required>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Submit" class="btn">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <p>Don't have an account? <a href="/signup">Register Here</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--***********************Footer Start *********************-->
+<footer class="contact-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3">
+				<div class="contact-content text-center">
+					<div class="contact-social">
+						<ul>
+							<li><a href="https://web.facebook.com/nouman.arain.524" title="Developer's Facebook Profile"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Developer's Whatsapp Nummber: +923133493416"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Developer's Twitter Id"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/muhammad-nouman-arain-b448b81a3/" title="Developer's Linkedin Profile"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/noumanarain53/?hl=en" title="Developer's Instagram Profile"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Potfolio of Website Developer"><i class="fa fa-user-o fa-2x" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<p style="color: white;">©2020|All Rights Reserved By Quiz World | Developed & Maintained by Nouman</p>
+	</div>
+</footer>
+<!-- =============== Footer end ====================-->
+</body>
+</html>

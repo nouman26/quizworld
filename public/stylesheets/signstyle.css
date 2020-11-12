@@ -1,0 +1,97 @@
+.center {
+	display: none;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: -40px;
+  }
+.invalid-user{
+	background-color: rgba(255,215,0,0.7);
+	border-radius:10px;
+	color:black;
+}
+.main-content{
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.4);
+	margin: 5em auto;
+	display: flex ;
+}
+.company__info{
+	background-color: #1D809F !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	color: #fff !important;
+}
+.fa-android{
+	font-size:3em !important;
+}
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none !important;
+	}
+	.center {
+		display: block;}
+	.login_form{
+		border-top-left-radius:20px !important;
+		border-bottom-left-radius:20px !important;
+	}
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+	.main-content{width: 70%;}
+}
+.row > h2{
+	color:#1D809F !important;
+}
+.login_form{
+	background-color: #fff !important;
+	border-top-right-radius:20px !important;
+	border-bottom-right-radius:20px !important;
+	border-top:1px solid #ccc !important;
+	border-right:1px solid #ccc !important;
+}
+form{
+	padding: 0 2em !important;
+}
+.form__input{
+	width: 100% !important;
+	border:0px solid transparent !important;
+	border-radius: 0 !important;
+	border-bottom: 1px solid #aaa !important;
+	padding: 1em .5em .5em !important;
+	padding-left: 2em !important;
+	outline:none !important;
+	margin:1.5em auto !important;
+	transition: all .5s ease !important;
+}
+.form__radio{
+	width: 100% !important;
+	border:0px solid transparent !important;
+	font-size: 15px;
+}
+
+
+.form__input:focus{
+	border-bottom-color: #1D809F !important;
+	box-shadow: 0 0 5px rgba(0,80,80,.4)!important; 
+	border-radius: 4px !important;
+}
+.btn{
+	transition: all .5s ease !important;
+	width: 70% !important;
+	border-radius: 30px !important;
+	color:#1D809F !important;
+	font-weight: 600 !important;
+	background-color: #fff !important;
+	border: 1px solid #1D809F !important ;
+	margin-top: 1.5em !important;
+	margin-bottom: 1em !important;
+}
+.btn:hover, .btn:focus{
+	background-color: #1D809F !important;
+	color:#fff !important;
+}

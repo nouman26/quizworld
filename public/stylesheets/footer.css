@@ -1,0 +1,39 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-area {
+    overflow: hidden;
+}
+.contact-social {
+    margin-top: 30px;
+}
+.contact-social > ul {
+    display: inline-flex;
+}
+.contact-social ul li a {
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+}
+.contact-social ul li a:hover {
+    border: 1px solid white;
+}
+.contact-social i{
+	color: white !important;
+}
+.contact-area {
+    background: #1D809F;
+    color: white!important;
+}
+footer p {
+    text-align: center;
+}
+@media (min-width: 1200px){
+.col-lg-6 {
+    width: 100% !important;
+}}

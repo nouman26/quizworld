@@ -1,0 +1,163 @@
+*{
+	margin:0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+section p{
+	font-size: 20px;
+	font-weight: bold;
+}
+h4{
+	text-decoration: underline;
+}
+
+header{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 1%;  
+    background: #1D809F; 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-right: 10vw;
+	padding-left: 10vw;
+}
+section{
+		margin-top: 5%;
+		background:linear-gradient(rgba(255,255,255,0.7) , rgba(255,255,255,0.5));
+		border-radius: 10px;
+		padding:5%!important;
+		-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
+		box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
+}
+/*-------------Star of 2nd tab-----------------*/
+.head{
+	text-align: center;
+	color: white;
+}
+.head h2{
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+/* Submit Button */
+.submit {
+	padding:2px 10px;
+    font-size: 20px;
+    font-weight: bold;
+	letter-spacing:1px;
+	background:white;
+	height:40px;
+    letter-spacing:1px;
+    text-align: center !important;
+	color:red;
+    border:3px solid red;
+    border-radius: 10px;
+    display: block;
+	margin: auto;
+	margin-top: 5%;
+}
+.submit:hover {
+	color:white;
+	border:2px solid white;
+	background:red;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 350px){
+section p{
+	font-size: 17px;
+	font-weight: bold;
+}
+.head h2{
+	font-size: 20px!important;
+}
+h3{
+	font-size: 19px!important;
+}
+}
+
+
+/* Only for teacher Panel */
+
+.text{
+    text-align: center!important;
+    color: white!important;
+}
+.container form input,
+.container form textarea,.tea input{
+	width:70%!important;
+	height:40px!important;
+	padding:5px 10px!important;
+	font-size: 15px!important;
+	color:black!important;
+    letter-spacing:1px!important;
+    display: block!important;
+    margin: auto!important;
+	margin-bottom:25px!important;
+	border-radius: 10px;
+}
+
+.container form textarea {
+    margin-top: 10%!important;
+    height:80px!important;
+    font-weight: bold!important;
+    font-size: 20px!important;    
+}
+
+@media screen and (max-width: 771px){
+.container form input,
+.container form textarea {
+    width:90% !important;
+    }
+}
+
+
+/* Footer Style */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-area {
+    overflow: hidden;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid white;
+}
+.contact-social i{
+	color: white !important;
+}
+
+.contact-area{
+    background: #1D809F;
+    color: white!important;
+}
+
+footer p {
+    text-align: center;
+}

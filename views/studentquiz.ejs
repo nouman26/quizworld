@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta charset="utf-8">
+        <title>Quiz World</title>
+        <link rel="stylesheet" href="/stylesheets/quizstyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    </head>
+    <body>
+    <!-- For Background Animation -->
+        <header>
+            <img src="/Images/quiz world white.png" alt="" class="center">
+        <div class="head">
+            <h2>Attempt All Question</h2>
+            <h5>In the end don't forget to press submit button</h5>
+        </div>
+        <form method="POST" action="/submit">
+            <%var i=0%>
+            <%read.forEach(function(row){ %>
+            <%i++%>
+        <section class="container">
+            <h4><%="Question :"+i%></h4>
+            <p><%=row.question%></p>
+            <input type="radio" name=<%="option"+i%> value="<%=row.option1%>">
+            <label for=<%=row.option1%>><%=row.option1%></label><br>
+            <input type="radio" name=<%="option"+i%> value="<%=row.option2%>">
+            <label for=<%=row.option2%>><%=row.option2%></label><br>
+            <input type="radio" name=<%="option"+i%> value="<%=row.option3%>">
+            <label for=<%=row.option3%>><%=row.option3%></label><br>
+            <input type="radio" name=<%="option"+i%> value="<%=row.option4%>">
+            <label for=<%=row.option4%>><%=row.option4%></label>
+        </section>
+        <% }) %>
+            <button name="send" type="submit" class="submit">Submit</button>
+        </form> 
+</header>
+
+<!--***********************Footer Start *********************-->
+<footer class="contact-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3">
+				<div class="contact-content text-center">
+					<div class="contact-social">
+						<ul>
+							<li><a href="https://web.facebook.com/nouman.arain.524" title="Developer's Facebook Profile"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Developer's Whatsapp Nummber: +923133493416"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Developer's Twitter Id"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/muhammad-nouman-arain-b448b81a3/" title="Developer's Linkedin Profile"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/noumanarain53/?hl=en" title="Developer's Instagram Profile"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Potfolio of Website Developer"><i class="fa fa-user-o fa-2x" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<p style="color: white;">©2020|All Rights Reserved By Quiz World | Developed & Maintained by Nouman</p>
+	</div>
+</footer>
+
+<!-- =============== Footer end ====================-->
+    </body>
+</html>
