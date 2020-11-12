@@ -21,7 +21,7 @@
         <form method="POST" action="/quiz">
             
         <section class="container">
-            <h5 style="text-align: center;margin-top:-20px"><%=msg%></h5>
+            <h5 style="text-align: center;margin-top:-10px"><%=msg%></h5>
             <%read.forEach(function(row){ %>
             <input type="radio" name="option" value="<%=row.class%>">
             <label for=<%=row.class%>><%=row.class%></label><br>

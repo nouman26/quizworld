@@ -43,7 +43,11 @@ section{
 }
 .head h2{
     text-decoration: underline;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.head h5{
+    font-size: 1.05rem !important;
 }
 /* Submit Button */
 .submit {
