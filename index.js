@@ -279,6 +279,4 @@ app.post("/submit",check,function(req,res){
     res.send("succesfully submitted")
 })
 
-app.listen(5000,function(){
-    console.log("app is running on port no 5000")
-})
+app.listen(process.env.PORT || 5000,()=>console.log("App is RUnning"))
