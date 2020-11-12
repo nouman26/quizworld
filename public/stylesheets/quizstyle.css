@@ -114,8 +114,15 @@ h3{
 @media screen and (max-width: 771px){
 .container form input,
 .container form textarea {
-    width:90% !important;
+    width:100% !important;
+    padding:5px!important;
     }
+.container form textarea {
+    font-size: 15px!important;
+}
+.container form input{
+    font-size: 12px!important;
+}
 }
 
 
