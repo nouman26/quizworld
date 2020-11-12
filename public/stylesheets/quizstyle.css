@@ -9,11 +9,12 @@
     margin-bottom: 15px;
   }
 section p{
-	font-size: 20px;
+	font-size: 1.0rem;
 	font-weight: bold;
 }
 h4{
-	text-decoration: underline;
+    text-decoration: underline;
+    font-size: 1.0rem !important;
 }
 
 header{
@@ -51,13 +52,11 @@ section{
 }
 /* Submit Button */
 .submit {
-	padding:2px 10px;
-    font-size: 20px;
+    padding: 3px 40px;
+    font-size: 1.0rem;
     font-weight: bold;
 	letter-spacing:1px;
 	background:white;
-	height:40px;
-    letter-spacing:1px;
     text-align: center !important;
 	color:red;
     border:3px solid red;
